@@ -19,13 +19,13 @@ function increaseRankBy(n){
   return lis
 }
 
-function deepestChild(){
-  const main = document
-               .getElementById('grand-node')
-               .querySelectorAll('div')
-  for (var i = 0; i < main.length; i++) {
-    if (main[i].innerHTML != '') {
-      return main[i]
-    }
+function deepestChild() {
+  let gNode = document.querySelector('#grand-node')
+  let nextNode = gNode.children[0];
+  
+  while (nextNode) {
+    gNode = nextNode;
+    nextNode = gNode.children[0];
   }
+  return (gNode);
 }
