@@ -13,7 +13,7 @@ function increaseRankBy(n){
               .querySelectorAll('ul.ranked-list li')
 
   for (var i = 0; i < lis.length; i++) {
-    lis[i].innerHTML = parseInt(lis[i].innerHTML) + n
+    lis[i].innerText = parseInt(lis[i].innerText) + n
   }
 
   return lis
