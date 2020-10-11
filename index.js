@@ -25,7 +25,7 @@ function deepestChild(){
                .querySelectorAll('div')
   for (var i = 0; i < main.length; i++) {
     if (main[i].innerHTML != '') {
-      return main[i].innerHTML
+      return main[i]
     }
   }
 }
